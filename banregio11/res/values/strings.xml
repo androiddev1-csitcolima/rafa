@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Banregio11Activity!</string>
+    <string name="app_name">Banregio11</string>
+    <string name="menu_mis_cuentas">Mis\nCuentas</string>
+    <string name="menu_tarjetas_de_credito">Tarjetas de\Credito</string>
+    <string name="menu_inversiones">Inversiones</string>
+    <string name="mis_cuentas">Ir a\nMovimientos</string>
+    <string name="lista_noitems">No hay elementos</string>
+
+</resources>
