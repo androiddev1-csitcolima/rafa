@@ -1,0 +1,47 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:id="@+id/header16"
+    	android:layout_width="match_parent"
+    	android:layout_height="50dip"
+    	android:background="@drawable/header"
+        >
+        <!-- Boton que no recuerdo para que sirve -->
+        <ImageButton 
+		    android:id="@+id/hdr16_btnasdf"
+		    android:layout_width="42dip"
+    		android:layout_height="42dip"
+    		android:layout_alignParentLeft="true"
+    		android:background="@drawable/fondo_btn"
+    		android:src="@drawable/btnheader_asdf"
+    		android:layout_marginLeft="4dip"
+    		android:layout_marginBottom="4dip"
+    		android:layout_marginTop="4dip"
+    		android:scaleType="centerInside"
+		    />
+        <!-- Pongo un espacio? -->
+        <!-- Boton para bloquear -->
+        <ImageButton 
+		    android:id="@+id/hdr16_btnsalir"
+		    android:layout_width="42dip"
+    		android:layout_height="42dip"
+    		android:layout_alignParentRight="true"
+    		android:background="@drawable/fondo_btn"
+    		android:src="@drawable/icon_salir"
+    		android:layout_marginRight="4dip"
+    		android:layout_marginBottom="4dip"
+    		android:layout_marginTop="4dip"
+    		android:scaleType="centerInside"
+    		android:padding="4dip"
+		    />
+        <ImageButton 
+		    android:id="@+id/hdr16_btnbloqueado"
+		    android:layout_width="42dip"
+    		android:layout_height="42dip"
+    		android:layout_toLeftOf="@id/hdr16_btnsalir"
+    		android:background="@drawable/fondo_btn"
+    		android:src="@drawable/btnheader_bloquear"
+    		android:layout_marginRight="10dip"
+    		android:layout_marginBottom="4dip"
+    		android:layout_marginTop="4dip"
+    		android:scaleType="centerInside"
+		    />
+</RelativeLayout>

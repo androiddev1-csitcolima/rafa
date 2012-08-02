@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:background="#FFFFFF"
+    >
+    
+    <!-- El titulo -->
+    <include 
+        android:id="@+id/title"
+        layout="@layout/header17"
+        />
+    
+    <!-- Los menus -->
+    <RelativeLayout 
+        android:id="@+id/menu"
+    	android:layout_width="match_parent"
+    	android:layout_height="35dip"
+    	android:layout_below="@id/title"
+    	android:paddingTop="4dip"
+    	>
+		<!-- Menu 1 -->
+		<LinearLayout
+		    android:id="@+id/menu1"
+		    android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:layout_alignParentTop="true"
+		    >
+			<!-- Boton: Movimientos -->
+			<Button 
+		    	android:id="@+id/btnmovimientos"
+		    	android:layout_width="wrap_content"
+    			android:layout_height="match_parent"
+    			android:drawableLeft="@drawable/img_movimientosactivo"
+    			android:background="@drawable/btnmenu_left"
+    			android:layout_weight="1"
+    			android:paddingLeft="4dip"
+    			android:paddingRight="4dip"
+    			android:text="@string/menu_movimientos"
+    			android:textSize="10sp"
+    			android:textColor="#FFFFFF"
+    			android:gravity="right|center"
+    			android:textStyle="bold"
+		    	/>
+			<!-- Boton Saldo Bloqueado -->
+			<Button 
+		    	android:id="@+id/btnsaldo_bloqueado"
+		    	android:layout_width="wrap_content"
+    			android:layout_height="match_parent"
+    			android:drawableLeft="@drawable/icon_saldobloqueadoinactivo"
+    			android:background="@drawable/btnmenu_inactivo"
+    			android:layout_weight="1"
+    			android:paddingLeft="4dip"
+    			android:paddingRight="4dip"
+    			android:text="@string/menu_saldo_bloqueado"
+    			android:textColor="#767A7D"
+    			android:textSize="10sp"
+    			android:gravity="right|center"
+    			android:textStyle="bold"
+		    	/>
+		</LinearLayout>
+		<!-- Menu 2 -->
+		<LinearLayout
+		    android:id="@+id/menu2"
+		    android:layout_width="match_parent"
+    		android:layout_height="match_parent"
+    		android:layout_alignParentTop="true"
+		    >
+			<!-- Boton: Movimientos -->
+			<Button 
+		    	android:id="@+id/btnmovimientos2"
+		    	android:layout_width="wrap_content"
+    			android:layout_height="match_parent"
+    			android:drawableLeft="@drawable/img_movimientosactivo"
+    			android:background="@drawable/btnmenu_left"
+    			android:layout_weight="1"
+    			android:paddingLeft="4dip"
+    			android:paddingRight="4dip"
+    			android:text="@string/menu_movimientos"
+    			android:textSize="10sp"
+    			android:textColor="#FFFFFF"
+    			android:gravity="right|center"
+    			android:textStyle="bold"
+		    	/>
+		</LinearLayout>
+    </RelativeLayout>
+    
+    <!-- Pie de pagina -->
+    <LinearLayout 
+        android:id="@+id/footer"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/btnmenu_left"
+        >
+        <TextView 
+            android:id="@+id/footer_saldo_bloqueado"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:text="@string/footer_saldo_actual"
+            android:textSize="14sp"
+    		android:textColor="#FFFFFF"
+    		android:gravity="right|center"
+    		android:textStyle="bold"
+    		android:layout_marginRight="4dip"
+            />
+    </LinearLayout>
+    
+    <!-- El contenido -->
+
+    <RelativeLayout
+        android:id="@+id/contenido"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/footer"
+        android:layout_below="@id/menu" >
+
+        <!-- Aqui el contenido, eso lo veo mañana -->
+        <LinearLayout
+            android:id="@+id/botones"
+            android:layout_width="match_parent"
+        	android:layout_height="50dip"
+        	android:layout_alignParentTop="true"
+        	>
+
+			<Button
+			    android:id="@+id/movimientos_anterior"
+			    android:layout_width="match_parent"
+			    android:layout_height="fill_parent"
+			    android:background="@drawable/btnmenu_inactivo"
+			    android:drawableLeft="@drawable/btn_anterior"
+			    android:drawablePadding="4dip"
+			    android:gravity="left|center"
+			    android:padding="4dip"
+			    android:text="@string/mes_anterior"
+			    android:textColor="#767676"
+			    android:textSize="10sp"
+			    android:textStyle="bold" />
+
+			<Button 
+			    android:id="@+id/movimientos_siguiente"
+			    android:layout_width="wrap_content"
+        		android:layout_height="fill_parent"
+        		android:drawableRight="@drawable/btn_siguiente"
+    			android:background="@drawable/btnmenu_inactivo"
+    			android:layout_weight="1"
+    			android:text="@string/mes_siguiente"
+    			android:textSize="10sp"
+    			android:textColor="#767676"
+    			android:gravity="right|center"
+    			android:textStyle="bold"
+    			android:drawablePadding="4dip"
+    			android:padding="4dip"
+    			android:visibility="gone"
+			    />
+            
+        </LinearLayout>
+
+        <ListView
+            android:id="@+id/list"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:groupIndicator="@null"
+            android:layout_below="@id/botones" >
+        </ListView>
+    </RelativeLayout>
+</RelativeLayout>

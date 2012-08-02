@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/fondo_grupo"
+    >
+    <TextView 
+        android:id ="@+id/tvGroup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#6E0A2C"
+        android:paddingTop="10dp"
+        android:paddingLeft="5dp"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:text="lalala"
+        />
+    <TextView 
+        android:id ="@+id/tvCuenta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#383838"
+        android:paddingLeft="5dp"
+        android:text="091-12345-321-3"
+        android:textStyle="bold"
+        android:layout_below="@id/tvGroup"
+        />
+    <TextView 
+        android:id ="@+id/tvTipo_tarjeta"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#383838"
+        android:paddingLeft="5dp"
+        android:text="Visa Platino"
+        android:textStyle="bold"
+        android:layout_below="@id/tvCuenta"
+        />
+    <TextView 
+        android:id ="@+id/saldo_disponible"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#848484"
+        android:paddingTop="10dp"
+        android:paddingRight="5dp"
+        android:text="saldo disponible"
+        android:textStyle="bold"
+        android:layout_alignRight="@id/tvGroup"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        />
+    <TextView 
+        android:id ="@+id/tvSaldo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#383838"
+        android:paddingRight="5dp"
+        android:text="$000,000,000.00 MXN"
+        android:textStyle="bold"
+        android:layout_alignRight="@id/tvCuenta"
+        android:layout_alignParentRight="true"
+        android:layout_below="@id/saldo_disponible"
+        />
+
+</RelativeLayout>

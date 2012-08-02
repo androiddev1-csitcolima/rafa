@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="hello">Hello World, Banregio11Activity!</string>
+    <string name="app_name">Banregio11</string>
+    <string name="menu_mis_cuentas">Mis\nCuentas</string>
+    <string name="menu_tarjetas_de_credito">Tarjetas de\Credito</string>
+    <string name="menu_inversiones">Inversiones</string>
+    <string name="mis_cuentas">Ir a\nMovimientos</string>
+    <string name="btn_mis_cuentas">Mis\nCuentas</string>
+    <string name="lista_noitems">No hay elementos</string>
+    <string name="menu_movimientos">Mis movimientos\nMes Año</string>
+    <string name="menu_saldo_bloqueado">Saldo Bloqueado\nMes Año</string>
+    <string name="footer_saldo_actual">Saldo Actual\n$0000.0</string>
+    <string name="footer_saldo_bloqueado">Total Saldo Bloqueado: $0000.0</string>
+    <string name="mes_anterior">Ir a Mes Anterior\nMes-Año</string>
+    <string name="mes_siguiente">Ir a Mes Siguiente\nMes-Año</string>
+
+</resources>

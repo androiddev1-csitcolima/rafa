@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/textura_fondo" >
+    
+    <TextView 
+        android:id ="@+id/clabe"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:textColor="#FFFFFF"
+        android:paddingTop="5dp"
+        android:paddingLeft="5dp"
+        android:text="CLABE"
+        android:textStyle="bold"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:textSize="9sp"
+        />
+
+    <TextView
+        android:id="@+id/saldo_bloqueado"
+        android:layout_width="100dip"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@id/clabe"
+        android:paddingLeft="5dp"
+        android:text="Saldo Bloqueado"
+        android:textColor="#FFFFFF"
+        android:textSize="9sp"
+        android:textStyle="bold" />
+    
+    <Button 
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/btn_ir_movimientos"
+        android:drawableRight="@drawable/btn_ir"
+        android:text="@string/mis_cuentas"
+        android:layout_alignParentRight="true"
+        android:textSize="9sp"
+        android:gravity="center_vertical|right"
+        />
+
+    <TextView
+        android:id="@+id/tvChild"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_toLeftOf="@+id/ir_movimientos"
+        android:layout_toRightOf="@id/clabe"
+        android:paddingLeft="5dp"
+        android:paddingTop="5dp"
+        android:text="0123456789012345"
+        android:textColor="#FFFFFF"
+        android:textSize="9sp"
+        android:textStyle="bold" 
+        android:gravity="right"/>
+
+    <TextView
+        android:id="@+id/tvsaldo_bloqueado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignRight="@+id/tvChild"
+        android:layout_below="@id/tvChild"
+        android:layout_toRightOf="@id/saldo_bloqueado"
+        android:paddingLeft="5dp"
+        android:text="300"
+        android:textColor="#FFFFFF"
+        android:textSize="9sp"
+        android:textStyle="bold" 
+        android:gravity="right"/>
+
+</RelativeLayout>
