@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical" >
+    
+    <include 
+        android:id ="@+id/header"
+        android:layout_alignParentTop="true"
+        layout="@layout/header26">
+    </include>
+
+    <RelativeLayout 
+        android:id ="@+id/menu"
+        android:layout_width="fill_parent"
+    	android:layout_height="wrap_content"
+    	android:layout_below="@id/header"
+        >
+        <Button 
+		    android:id="@+id/btnenviar"
+		    android:layout_width="fill_parent"
+    		android:layout_height="30dp"
+    		android:drawableLeft="@drawable/consultainactivo"
+    		android:background="@drawable/btnmenu_inactivo"
+    		android:paddingLeft="4dip"
+    		android:paddingRight="4dip"
+    		android:text="Enviar"
+    		android:textSize="12sp"
+    		android:textColor="#787878"
+    		android:gravity="left|center_vertical"
+    		android:textStyle="bold"
+    		android:layout_alignParentTop="true"
+		    />
+        <Button 
+		    android:id="@+id/btnpendientes"
+		    android:layout_width="fill_parent"
+    		android:layout_height="30dp"
+    		android:drawableLeft="@drawable/pendientesinactivo"
+    		android:background="@drawable/btnmenu_inactivo"
+    		android:paddingLeft="4dip"
+    		android:paddingRight="4dip"
+    		android:text="Pendientes de Enviar"
+    		android:textSize="12sp"
+    		android:textColor="#787878"
+    		android:gravity="left|center_vertical"
+    		android:textStyle="bold"
+    		android:layout_below="@id/btnenviar"
+		    />
+        <Button 
+		    android:id="@+id/btnconsulta"
+		    android:layout_width="fill_parent"
+    		android:layout_height="30dp"
+    		android:drawableLeft="@drawable/enviarinactivo"
+    		android:background="@drawable/btnmenu_inactivo"
+    		android:paddingLeft="4dip"
+    		android:paddingRight="4dip"
+    		android:text="Consulta o Cancelación de Envíos"
+    		android:textSize="12sp"
+    		android:textColor="#787878"
+    		android:gravity="left|center_vertical"
+    		android:textStyle="bold"
+    		android:layout_below="@id/btnpendientes"
+		    /> 
+    </RelativeLayout>
+    
+    <RelativeLayout
+        android:id="@+id/insertbrainhere" 
+        android:layout_width="match_parent"
+    	android:layout_height="match_parent"
+        android:layout_below="@id/menu"
+        >
+    </RelativeLayout>
+
+</RelativeLayout>
